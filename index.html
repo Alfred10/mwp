@@ -14,7 +14,9 @@
 		<link rel = "icon" type = "image/x-icon" href = "IMG/logo1.png">
         <style>
             
+            /*----------------------------------------*/
             /* element: */
+            /*----------------------------------------*/
             body {
     
                 margin: 0px;
@@ -28,7 +30,9 @@
 
             }
 
+            /*----------------------------------------*/
             /* classes: */
+            /*----------------------------------------*/
             .text {
     
                 font-family: arial;
@@ -36,28 +40,47 @@
     
             }
 
-            /* ids: */
-            #home_image {
-    
-                max-width: 65%;
-                max-height: 65%;
-    
-            }
-
-            #promo_image {
+            img.promo_image {
     
                 max-width: 100%;
                 max-height: 100%;
-    
+                
             }
 
-            #vid1 {
+            .promo_video {
     
                 width: 90%;
                 height: 90%;
                 padding-top: 3%;
                 padding-bottom: 3%;
+                
+            }
+
+            div.divc {
+                
+                width: 98%;
+                height: 60vh;
+                margin-top: 10px;
+
+            }
+
+            div.divce {
+                
+                display: inline-block;
+                width: 49%;
+                height: 99%;
+                vertical-align: top;
+
+            }
+
+            /*----------------------------------------*/
+            /* ids: */
+            /*----------------------------------------*/
+            #home_image {
     
+                max-width: 65%;
+                max-height: 65%;
+                
             }
 
             #div11 {
@@ -69,60 +92,57 @@
     
             }
 
-            #div2c {
+            #div1 {
     
+                text-align: center;
+                display: inline-block;
                 width: 98%;
-                height: 60vh;
+                height: 36vh;
     
             }
 
-            #div21 {
+            #div4 {
     
+                text-align: center;
                 display: inline-block;
-                width: 49%;
-                height: 100%;
-                vertical-align: top;
-    
+                width: 98%;
+                height: auto;
+                
             }
 
-            #div22 {
-    
-                display: inline-block;
-                width: 49%;
-                height: 100%;
-                vertical-align: top;
-    
-            }
-
+            /*----------------------------------------*/
             /* mobile/tablet: */
+            /*----------------------------------------*/
             @media screen and (max-width: 800px) {
-    
+                
                 h2.text {
         
-                    font-size: 20px;
+                    font-size: 18px;
         
                 }
 
-                #div11 {
+                #div1 {
     
                     text-align: center;
-                    display: inline-block;
+                    display: block;
                     width: 100%;
     
                 }
-    
-                #div21 {
-        
+                
+                div.divc {
+                    
                     display: block;
+                    height: auto;
                     width: 100%;
-                    vertical-align: top;
-        
+                    margin-top: 10px;
+
                 }
 
-                #div22 {
-    
+                div.divce {
+                    
                     display: block;
-                    width: 100%;
+                    margin-top: 10px;
+                    width: 98%;
                     vertical-align: top;
 
                 }
@@ -136,24 +156,24 @@
     <body>
         
         <center>
-		
-            <!-- div11: -->
-            <div id = "div11">
+            
+           <!-- div1: -->
+           <div id = "div1">
             
                 <img id = "home_image" src = "IMG/logo1.png">
                 <h2 class = "text">NEW RELEASE "I WANT IT ALL" ON EONIAN RECORDS</h2>
-                <h2 class = "text">NY FURY MERCHANDISE COMING SOON!</h2>
+                <h2 class = "text">NY FURY MERCHANDISE COMMING SOON!</h2>
 
-            </div>
+           </div>
             
             <!-- div2c: -->
-            <div id = "div2c">
+            <div id = "div2c" class = "divc">
             
                 <!-- div21: -->
-                <div id = "div21">
+                <div id = "div21" class = "divce">
             
                     <iframe
-                    id="vid1"
+                    class="promo_video"
                     src="https://www.youtube.com/embed/HowA1EV3Xfc"
                     title="N.Y. FURY "I Want It All" Album Promo (Eönian Records) #kiss #vanhalen" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -162,16 +182,50 @@
                 </div>
                 
                 <!-- div22: -->
-                <div id = "div21">
+                <div id = "div22" class = "divce">
                     
-                    <a href = "https://www.eonianrecords.com/blog/ny-fury-returns"><img id = "promo_image" src = "IMG/promo.png"></a>
-               
+                    <a href = "https://www.eonianrecords.com/blog/ny-fury-returns"><img class = "promo_image" src = "IMG/promo.png"></a>
+                    
                 </div>
             
             </div>
+
+            <!-- div3c: -->
+            <div id = "div3c" class = "divc">
+                
+                <!-- div31: -->
+                <div id = "div31" class = "divce">
+                    
+                    <iframe
+                    class="promo_video"
+                    src="https://www.youtube.com/embed/7M4c4pFWZ3M"
+                    title="NY FURY 'Fighting for your Love' Promo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                </div>
+                
+                <!-- div32: -->
+                <div id = "div32" class = "divce">
+                    
+                    <a href = "mailto:nyfuryrocks@gmail.com?subject=Contest"><img class = "promo_image" src = "IMG/contest.png"></a>
+                    
+                </div>
+                
+            </div>
+
+            <!-- div4: -->
+            <div id = "div4">
+                
+                <h2 class = "text">Have any Questions?
+                Click <a href = "mailto:nyfuryrocks@gmail.com?subject=Question">here</a> to send us an email.
+                </h2>
+                
+            </div>
             
         </center>
-	    
+
     </body>
     
 </html>
